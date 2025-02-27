@@ -1,0 +1,35 @@
+mermaid
+
+flowchart TD
+    subgraph 개발 목표
+        A1[AI 기반 통합 문서 관리 플랫폼]
+        A2[고성능 AI 문서 분석 엔진]
+        A3[유연한 시스템 통합]
+    end
+
+    subgraph 개발 방법
+        B1[클라우드 네이티브 아키텍처<br>(Kubernetes, Hadoop HDFS)]
+        B2[웹소켓, Apache POI 등 오픈소스 통합]
+        B3[sLLM 모델 최적화<br>(DistilBERT, ALBERT)]
+        B4[Fine-tuning & RAG 파이프라인<br>(Faiss, Pinecone)]
+        B5[RESTful API & GraphQL 서버<br>(Express.js, Apollo)]
+        B6[API 게이트웨이 & OAuth 2.0<br>(Kong, AWS API Gateway)]
+    end
+
+    subgraph 연구팀 구성
+        C1[AI 문서분류 및 보안 평가 팀]
+        C2[지능형 문서관리 시스템 팀<br>(프론트엔드 외주)]
+    end
+
+    A1 ---|문서 라이프사이클 관리| B1
+    A1 ---|실시간 버전 관리 및 협업| B2
+    A2 ---|문서 분류, 보안등급 평가| B3
+    A2 ---|자동 업데이트 및 평가| B4
+    A3 ---|기업 시스템 연동| B5
+    A3 ---|인증 시스템 통합| B6
+    C1 --- B3
+    C1 --- B4
+    C2 --- B1
+    C2 --- B2
+    C2 --- B5
+    C2 --- B6
